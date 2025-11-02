@@ -67,7 +67,7 @@ const WeatherForecast = ({ data }: WeatherForecastProps) => {
                     {day.weather.description}
                   </p>
                 </div>
-                <div className="flex justify-center gap-4">
+                <div className="flex flex-wrap justify-center gap-4">
                   <span className="flex items-center ">
                     <ArrowDown className="mr-1 h-4 w-4 text-blue-500" />
                     {formatTemp(day.temp_min)}
@@ -77,7 +77,7 @@ const WeatherForecast = ({ data }: WeatherForecastProps) => {
                     {formatTemp(day.temp_max)}
                   </span>
                 </div>
-                <div className="flex justify-end gap-4">
+                <div className="flex flex-wrap justify-end gap-4">
                   <span className="flex items-center ">
                     <Droplets className="mr-1 h-4 w-4 text-blue-500" />
                     <span className="text-sm">{day.humidity}%</span>

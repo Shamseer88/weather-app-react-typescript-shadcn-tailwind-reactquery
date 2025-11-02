@@ -16,8 +16,10 @@ const Header = () => {
             className="h-14"
           />
         </Link>
-        <div className="flex flex-wrap gap-4">
-          <CitySearch />
+        <div className="flex gap-4">
+          <div>
+            <CitySearch />
+          </div>
           <div
             onClick={() => setTheme(isDark ? "light" : "dark")}
             className={`flex items-center cursor-pointer transition-transform duration-500 ${
